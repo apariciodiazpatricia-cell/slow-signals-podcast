@@ -1,13 +1,23 @@
-# 🎙️ Slow Signals — Podcast Web Application
-
 <div align="center">
+
+<a href="https://github.com/apariciodiazpatricia-cell/slow-signals-podcast">
+  <img src="https://capsule-render.vercel.app/api?wave&section=wave&type=waving&color=0:0c0a09,50:e0b464,100:0c0a09&height=170&fontSize=40&fontColor=f5f1ea&fontAlignY=38&text=%F0%9F%8E%9E%EF%B8%8F%20Slow%20Signals%20Podcast&desc=Conversations%20on%20craft%2C%20culture%20%26%20attention&descSize=20&descAlignY=63&descColor=e0b464&animation=twinkle" alt="🎙️ Slow Signals Podcast — Conversations on craft, culture & attention" />
+</a>
+
+<a href="https://github.com/apariciodiazpatricia-cell/slow-signals-podcast">
+  <img src="https://capsule-render.vercel.app/api?wave&section=wave&type=waving&color=0:0c0a09,50:e0b464,100:0c0a09&height=70&fontSize=22&fontColor=e0b464&fontAlignY=48&text=Built%20with%20Next.js%2015%2C%20TypeScript%20%26%20Clean%20Code&animation=twinkle" alt="Built with Next.js 15, TypeScript & Clean Code" />
+</a>
+
+<br/><br/>
 
 ![Next.js](https://img.shields.io/badge/Next.js-15.5-black?style=for-the-badge&logo=next.js&logoColor=white)
 ![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![CSS Modules](https://img.shields.io/badge/CSS-Modules-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![CSS Modules](https://img.shields.io/badge/CSS%20Modules-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![Quality Gates](https://img.shields.io/badge/Quality%20Gates-Passing-brightgreen?style=for-the-badge&logo=githubactions&logoColor=white)
-![Accessibility](https://img.shields.io/badge/a11y-WCAG%20AA-success?style=for-the-badge)
+![Accessibility](https://img.shields.io/badge/a11y-WCAG%202.1%20AA-success?style=for-the-badge)
+![Lighthouse](https://img.shields.io/badge/Lighthouse-100%2F100%2F100-41B6E6?style=for-the-badge&logo=lighthouse&logoColor=white)
+![License](https://img.shields.io/badge/Static%20Export-CDN%20Ready-e0b464?style=for-the-badge)
 
 <p align="center">
   <strong>Una aplicación web estática, minimalista y de alto rendimiento para podcasting digital.</strong>
@@ -16,14 +26,13 @@
 </p>
 
 [✨ Ver Demo Local](#-guía-de-instalación-y-clonado) •
-[🗺️ Rutas](#-visión-general) •
+[🗺️ Rutas](#-mapa-de-rutas) •
 [📐 Arquitectura](#-arquitectura-y-estructura-del-proyecto) •
 [🧪 Quality Gates](#-pruebas-y-quality-gates) •
-[🚀 Despliegue](#-despliegue-estático)
+[👩‍💻 Autora](#-autora-y-contacto) •
+[📦 Repo](https://github.com/apariciodiazpatricia-cell/slow-signals-podcast)
 
 ---
-
-</div>
 
 ## 📖 Índice
 
@@ -36,6 +45,9 @@
 - [🧪 Pruebas y Quality Gates](#-pruebas-y-quality-gates)
 - [📥 Guía de Instalación y Clonado](#-guía-de-instalación-y-clonado)
 - [🚀 Despliegue Estático](#-despliegue-estático)
+- [👩‍💻 Autora y Contacto](#-autora-y-contacto)
+
+</div>
 
 ---
 
@@ -45,12 +57,14 @@
 
 ### ✨ Características Principales
 
-- ⚡ **Zero Server Overhead:** exportación puramente estática (27 páginas pre-renderizadas), primer cargado de **103–109 kB** y páginas de **8–206 kB** transferidos — muy por debajo del presupuesto de 500 kB.
-- 🗂️ **Fuente Única de Verdad (SSOT):** los 20 episodios, el show, los locutores y el FAQ viven únicamente en `src/data/`; la landing, el catálogo y el detalle se renderizan desde los mismos objetos tipados.
-- 🛡️ **Invariantes en Compilación:** el build falla si no hay exactamente 20 episodios, si se repiten slugs/números, si no hay exactamente 1 destacado o si las fechas no siguen la cadencia semanal.
-- 🎨 **Estética Editorial Premium:** paleta cálida (*warm ink, ivory, muted gold*), tipografía *Playfair Display* + *Inter* (self-hosted, sin CDN externo) y micro-interacciones suaves con CSS Modules.
-- ♿ **Accesibilidad WCAG 2.1 AA:** enlace *Skip-to-content*, landmarks semánticos, `:focus-visible`, menú operable por teclado, `<details>` nativo en el FAQ y **Lighthouse a11y = 100** en todas las rutas.
-- 🧭 **Cero enlaces rotos:** las 4 páginas + 20 fichas de episodio + 404 amigable resuelven correctamente en cualquier servidor estático.
+| Capa | Qué aporta |
+| :--- | :--- |
+| ⚡ **Zero Server Overhead** | 27 páginas pre-renderizadas; primer cargado de 103–109 kB y páginas de 8–206 kB (presupuesto: 500 kB). |
+| 🗂️ **Fuente Única de Verdad** | Los 20 episodios, el show, los locutores y el FAQ viven solo en `src/data/`; landing, catálogo y detalle renderizan los mismos objetos tipados. |
+| 🛡️ **Invariantes en Build** | El build falla si no hay exactamente 20 episodios, si se repiten slugs, si no hay 1 destacado o si las fechas rompen la cadencia semanal. |
+| 🎨 **Estética Editorial** | Paleta *warm ink / ivory / muted gold* y tipografía *Playfair Display* + *Inter* self-hosted. |
+| ♿ **Accesibilidad AA** | Skip-to-content, landmarks, `:focus-visible`, `aria-current`, `<details>` nativo y **Lighthouse 100**. |
+| 🧭 **Cero enlaces rotos** | 4 páginas + 20 fichas + 404 amigable funcionando en cualquier servidor estático. |
 
 ---
 
@@ -69,28 +83,32 @@
 
 ## 🎯 Progreso del Ejercicio Guiado
 
-El proyecto sigue la metodología **spec-driven** (`specs/001-podcast-website/`): especificación → plan → investigación → contratos → tareas → implementación → verificación.
+El proyecto sigue una metodología **spec-driven** (`specs/001-podcast-website/`): especificación → plan → investigación → contratos → tareas → implementación → verificación. **Estado actual: FEATURE COMPLETO (MVP + US2–US4 + polish)**.
 
 ```mermaid
 graph TD
-    A["Fase 1 · Setup e Infraestructura"] --> B["Fase 2 · Capa de Datos + Invariantes"]
-    B --> C["Fase 3 · Shell Global y Navegación"]
-    C --> D["Fase 4 · MVP — Landing + Featured Episode (US1)"]
-    D --> E["Fase 5 · Catálogo + Detalle de 20 episodios (US2)"]
-    E --> F["Fase 6 · About + Locutores + Contacto (US3)"]
-    F --> G["Fase 7 · FAQ accesible (US4)"]
-    G --> H["Fase 8 · Auditoría, Polish y Quality Gates"]
-    H --> I["✅ Entrega: build estático portable"]
+    A["📄 Spec: user stories P1–P4 + FR-001…FR-012"] --> B["🧭 Plan, research y contratos"]
+    B --> C["Fase 1 · Setup: Next.js 15 + TS + tokens"]
+    C --> D["Fase 2 · Capa de datos + invariantes de build"]
+    D --> E["Fase 3 · Shell accesible y navegación"]
+    E --> F["🎯 Fase 4 · MVP — Landing + Featured (US1)"]
+    F --> G["Fase 5 · Catálogo + 20 detalles SSG (US2)"]
+    G --> H["Fase 6 · About + locutores (US3)"]
+    H --> I["Fase 7 · FAQ accesible (US4)"]
+    I --> J["Fase 8 · Auditoría, refactor y quality gates"]
+    J --> K["🚀 Git publicado + build estático portable"]
 
-    style A fill:#2e2820,stroke:#e0b464,color:#f5f1ea
-    style B fill:#2e2820,stroke:#e0b464,color:#f5f1ea
-    style C fill:#2e2820,stroke:#e0b464,color:#f5f1ea
-    style D fill:#2e2820,stroke:#e0b464,color:#f5f1ea
-    style E fill:#2e2820,stroke:#e0b464,color:#f5f1ea
-    style F fill:#2e2820,stroke:#e0b464,color:#f5f1ea
-    style G fill:#2e2820,stroke:#e0b464,color:#f5f1ea
-    style H fill:#2e2820,stroke:#e0b464,color:#f5f1ea
-    style I fill:#241a06,stroke:#e0b464,color:#e0b464
+    style A fill:#16130f,stroke:#2e2820,color:#b9b1a4
+    style B fill:#16130f,stroke:#2e2820,color:#b9b1a4
+    style C fill:#1c1813,stroke:#2e2820,color:#f5f1ea
+    style D fill:#1c1813,stroke:#2e2820,color:#f5f1ea
+    style E fill:#1c1813,stroke:#2e2820,color:#f5f1ea
+    style F fill:#2e2820,stroke:#e0b464,color:#f0c97f
+    style G fill:#1c1813,stroke:#2e2820,color:#f5f1ea
+    style H fill:#1c1813,stroke:#2e2820,color:#f5f1ea
+    style I fill:#1c1813,stroke:#2e2820,color:#f5f1ea
+    style J fill:#1c1813,stroke:#2e2820,color:#f5f1ea
+    style K fill:#241a06,stroke:#e0b464,color:#e0b464
 ```
 
 ### ✅ Hitos completados
@@ -98,16 +116,12 @@ graph TD
 - [x] **Fase 1 — Setup:** Next.js 15 + TypeScript estricto + ESLint + tokens de diseño.
 - [x] **Fase 2 — Datos e invariantes:** 20 episodios tipados con validación en build (`src/data/invariants.ts`).
 - [x] **Fase 3 — Shell accesible:** `layout.tsx` con skip-link, `header/nav/main/footer`, `aria-current` en la ruta activa.
-- [x] **Fase 4 — MVP (US1):** landing con identidad + episodio destacado; verificada en navegador.
-- [x] **Fase 5 — Catálogo (US2):** `/episodes/` con 20 tarjetas y `/episodes/[slug]/` con `generateStaticParams()` (20 rutas SSG).
-- [x] **Fase 6 — About (US3):** premisa, locutores (`HostCard`), 3 enlaces de contacto y arte del show con texto alternativo descriptivo.
-- [x] **Fase 7 — FAQ (US4):** 8 preguntas agrupadas en 3 categorías con `<details>` nativo (sin JavaScript).
-- [x] **Fase 8 — Auditoría y polish:**
-  - [x] Eliminación de artefactos temporales (`tsconfig.tsbuildinfo`) y verificación de ausencia de duplicados/anidamientos redundantes.
-  - [x] Refactor DRY: fechas/duraciones centralizadas en `src/lib/format.ts`; estilos `inline` eliminados en favor de CSS Modules.
-  - [x] Corrección de portabilidad: `trailingSlash: true` evita la colisión `out/episodes.html` vs `out/episodes/` en servidores estáticos.
-  - [x] Per-route `metadata` + Open Graph en las 4 páginas y en el detalle.
-  - [x] Quickstart V1–V6 ejecutado sobre el build de producción.
+- [x] **Fase 4 — MVP (US1):** 🎯 landing con identidad + episodio destacado; verificada en navegador.
+- [x] **Fase 5 — Catálogo (US2):** `/episodes/` con 20 tarjetas y `/episodes/[slug]/` con `generateStaticParams()`.
+- [x] **Fase 6 — About (US3):** premisa, locutores (`HostCard`), 3 enlaces de contacto y arte con alt descriptivo.
+- [x] **Fase 7 — FAQ (US4):** 8 preguntas en 3 categorías con `<details>` nativo (sin JavaScript).
+- [x] **Fase 8 — Auditoría y polish:** sin duplicados ni artefactos temporales, refactor DRY (`src/lib/format.ts`), `trailingSlash: true` para portabilidad CDN, metadatos + Open Graph por ruta y quickstart V1–V6 sobre build de producción.
+- [x] **Publicación:** repositorio Git con historia estructurada (Conventional Commits) en GitHub.
 
 ---
 
@@ -181,7 +195,7 @@ mi-podcast/
 | Principio | Aplicación en el proyecto |
 | :--- | :--- |
 | **SRP** | Cada componente renderiza una cosa; los datos nunca se formaten ni se copian en las vistas. |
-| **DRY** | `src/lib/format.ts` centraliza fechas/duraciones/números; `PageHeader` evita repetir cabeceras; los tokens CSS evitan repetir valores mágicos. |
+| **DRY** | `src/lib/format.ts` centraliza fechas/duraciones/números; `PageHeader` evita repetir cabeceras; los tokens CSS evitan valores mágicos. |
 | **Tipado estricto** | 100% TypeScript, **cero `any`**, cero `@ts-ignore`, `strict: true`. |
 | **SSOT** | Un solo módulo define los episodios: landing, catálogo y detalle renderizan exactamente los mismos objetos (FR-011). |
 | **Fail-Fast** | `assertEpisodeInvariants()` se ejecuta al cargar el módulo: el build se detiene ante cualquier inconsistencia del dataset. |
@@ -203,6 +217,11 @@ mi-podcast/
 ---
 
 ## 🧪 Pruebas y Quality Gates
+
+<details>
+<summary>🧪 <b>Ver todos los comandos de calidad</b> (clic para desplegar)</summary>
+
+<br/>
 
 ```bash
 # 1. Análisis estático (ESLint)
@@ -235,15 +254,22 @@ npm test
 - ✅ **Lighthouse** (desktop): Accesibilidad, Buenas Prácticas y SEO = **100** en las 5 rutas principales.
 - ✅ Peso transferido por página: 8–206 kB (presupuesto: 500 kB).
 
+</details>
+
 ---
 
 ## 📥 Guía de Instalación y Clonado
 
+<details>
+<summary>📥 <b>Clonar, instalar y ejecutar en local</b> (clic para desplegar)</summary>
+
+<br/>
+
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/TU-USUARIO/mi-podcast.git
-cd mi-podcast
+git clone https://github.com/apariciodiazpatricia-cell/slow-signals-podcast.git
+cd slow-signals-podcast
 ```
 
 ### 2. Instalar dependencias
@@ -270,9 +296,16 @@ npm run preview    # sirve out/ en local para la revisión final
 
 > Requisito: **Node.js 20+**. No hay claves de API, bases de datos ni variables de entorno: el contenido es fictional y está embebido en el repositorio.
 
+</details>
+
 ---
 
 ## 🚀 Despliegue Estático
+
+<details>
+<summary>🚀 <b>Cómo publicar la carpeta <code>out/</code> en cualquier CDN</b> (clic para desplegar)</summary>
+
+<br/>
 
 ```bash
 npm run build
@@ -298,8 +331,45 @@ Funciona sin cambios en **GitHub Pages, Netlify, Vercel, Cloudflare Pages** o cu
 npm run preview   # sirve out/ y respeta la misma estructura que un CDN
 ```
 
+</details>
+
 ---
 
 <div align="center">
-  <sub>Diseñado y estructurado con ❤️ para demostración académica y buenas prácticas de ingeniería de software.</sub>
+
+## 👩‍💻 Autora y Contacto
+
+<br/>
+
+<a href="https://github.com/apariciodiazpatricia-cell">
+  <img src="https://github.com/apariciodiazpatricia-cell.png?size=130" alt="Foto de perfil de Patricia Aparicio Díaz en GitHub" width="130" />
+</a>
+
+### **Patricia Aparicio Díaz**
+
+*Software Engineer · Clean Code & Modern Web*
+
+<br/>
+
+[![GitHub](https://img.shields.io/badge/GitHub-apariciodiazpatricia--cell-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/apariciodiazpatricia-cell)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Patricia_Aparicio_D%C3%ADaz-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/patriciaapariciodiaz/)
+
+<br/>
+
+[![Repo](https://img.shields.io/badge/📦%20Repositorio-oficial-0c0a09?style=for-the-badge&logo=github&logoColor=e0b464)](https://github.com/apariciodiazpatricia-cell/slow-signals-podcast)
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?section=wave-footer&type=waving&color=0:0c0a09,50:e0b464,100:16130f&height=95&animation=twinkle" alt="" />
+
+<br/>
+
+<p>
+  <sub>⭐ Diseñado y construido con ❤️ por <b>Patricia Aparicio Díaz</b> ⭐</sub>
+  <br />
+  <sub>✨ Slow Signals Podcast · Next.js 15 · TypeScript · Clean Code · WCAG 2.1 AA ✨</sub>
+  <br />
+  <sub>© 2026 — Todos los episodios son contenido ficticio de demostración.</sub>
+</p>
+
 </div>
