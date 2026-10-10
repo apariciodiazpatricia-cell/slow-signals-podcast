@@ -1,0 +1,75 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding-block: var(--space-7) var(--space-6);
+}
+
+/* Soft gold aurora — distinctive, but CSS-only (no image weight) */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: -45% -15% auto;
+  height: 130%;
+  background:
+    radial-gradient(45% 55% at 28% 30%, rgba(224, 180, 100, 0.18), transparent 70%),
+    radial-gradient(35% 45% at 75% 20%, rgba(122, 92, 64, 0.22), transparent 70%);
+  pointer-events: none;
+}
+
+.hero > :global(.container) {
+  position: relative;
+}
+
+.title {
+  font-size: var(--text-hero);
+  margin-bottom: var(--space-3);
+}
+
+.tagline {
+  max-width: 34em;
+  font-size: var(--text-lg);
+  line-height: 1.5;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-4);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.primaryAction,
+.secondaryAction {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  border-radius: 999px;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  transition: transform var(--transition), background var(--transition),
+    border-color var(--transition);
+}
+
+.primaryAction {
+  background: var(--color-accent);
+  color: var(--color-accent-ink);
+}
+
+.primaryAction:hover {
+  background: var(--color-accent-strong);
+  color: var(--color-accent-ink);
+  transform: translateY(-2px);
+}
+
+.secondaryAction {
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+}
+
+.secondaryAction:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent-strong);
+  transform: translateY(-2px);
+}

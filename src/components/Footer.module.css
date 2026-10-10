@@ -1,0 +1,34 @@
+.footer {
+  margin-top: var(--space-7);
+  border-top: 1px solid var(--color-border);
+  background: var(--color-bg-raised);
+}
+
+.inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  justify-content: space-between;
+  align-items: baseline;
+  padding-block: var(--space-4);
+}
+
+.name {
+  margin: 0 0 var(--space-1);
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  color: var(--color-text);
+}
+
+.tagline {
+  margin: 0;
+  max-width: 36rem;
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+.copy {
+  margin: 0;
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+}

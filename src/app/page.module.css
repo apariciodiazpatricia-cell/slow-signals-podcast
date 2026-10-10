@@ -1,0 +1,5 @@
+.cta {
+  max-width: 46em;
+  margin-top: var(--space-4);
+  color: var(--color-text-muted);
+}
