@@ -1,11 +1,13 @@
 <div align="center">
 
 <a href="https://github.com/apariciodiazpatricia-cell/slow-signals-podcast">
-  <img src="https://capsule-render.vercel.app/api?wave&section=wave&type=waving&color=0:0c0a09,50:e0b464,100:0c0a09&height=170&fontSize=40&fontColor=f5f1ea&fontAlignY=38&text=%F0%9F%8E%9E%EF%B8%8F%20Slow%20Signals%20Podcast&desc=Conversations%20on%20craft%2C%20culture%20%26%20attention&descSize=20&descAlignY=63&descColor=e0b464&animation=twinkle" alt="🎙️ Slow Signals Podcast — Conversations on craft, culture & attention" />
+  <img src="./banner.svg" alt="Slow Signals Podcast Banner" width="100%" />
 </a>
 
+<br/><br/>
+
 <a href="https://github.com/apariciodiazpatricia-cell/slow-signals-podcast">
-  <img src="https://capsule-render.vercel.app/api?wave&section=wave&type=waving&color=0:0c0a09,50:e0b464,100:0c0a09&height=70&fontSize=22&fontColor=e0b464&fontAlignY=48&text=Built%20with%20Next.js%2015%2C%20TypeScript%20%26%20Clean%20Code&animation=twinkle" alt="Built with Next.js 15, TypeScript & Clean Code" />
+  <img src="https://readme-typing-svg.demolab.com?font=Playfair+Display&weight=600&size=20&duration=3000&pause=1000&color=E0B464&center=true&vCenter=true&width=700&lines=Conversations+on+craft%2C+culture+%26+attention;Built+with+Next.js+15%2C+TypeScript+%26+Clean+Code;Static+Export+Architecture+%C2%B7+WCAG+2.1+AA" alt="Typing SVG" />
 </a>
 
 <br/><br/>
@@ -360,7 +362,7 @@ npm run preview   # sirve out/ y respeta la misma estructura que un CDN
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?section=wave-footer&type=waving&color=0:0c0a09,50:e0b464,100:16130f&height=95&animation=twinkle" alt="" />
+<img src="./footer.svg" alt="Footer Divider" width="100%" />
 
 <br/>
 
